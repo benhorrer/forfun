@@ -1,0 +1,20 @@
+import random
+list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+       'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+       'u', 'v', 'w', 'x', 'y', 'z' ,'1', '2', '3', '4',
+       '5', '6', '7', '8', '9', '0']
+one = list
+two = list
+three = list
+four = list
+five = list
+unverified = True
+while unverified:
+    verification = [one[random.randint(0,35)] + two[random.randint(0,35)] + three[random.randint(0,35)] + four[random.randint(0,35)] + five[random.randint(0,35)]]
+    print(verification)
+    user_input = input('Please enter verification code: ')
+    if user_input.lower == verification:
+        print('Sucsefully Confirmed')
+        unverified = False
+    else:
+        print('Verification incorrect. Please try again')
